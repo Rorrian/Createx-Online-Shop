@@ -2205,11 +2205,15 @@ body {
   background-color: #fff;
   right: -100%;
   transition: right 0.5s ease 0s;
-  left: unset;
   bottom: unset;
   padding: unset;
   visibility: unset;
   pointer-events: none;
+}
+@media (min-width: 43.75em) {
+  .popup-cart {
+    left: unset;
+  }
 }
 .popup-cart.popup_open {
   transform: unset;
