@@ -1880,7 +1880,7 @@ body {
   .popup {
     left: 0;
     padding: 30px 10px;
-    transition: visibility 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
     visibility: hidden;
   }
 }
@@ -2204,7 +2204,7 @@ body {
   height: 100%;
   background-color: #fff;
   right: -100%;
-  transition: all 0.5s ease 0s;
+  transition: right 0.5s ease 0s;
   bottom: unset;
   padding: unset;
   visibility: unset;
@@ -2212,7 +2212,7 @@ body {
 }
 @media (min-width: 43.75em) {
   .popup-cart {
-    left: unset !important;
+    left: unset;
   }
 }
 .popup-cart.popup_open {
