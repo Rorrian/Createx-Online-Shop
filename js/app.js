@@ -8566,7 +8566,7 @@
                 } else console.log("Подходящего subMenu нет");
                 e.preventDefault();
             }
-            if (document.documentElement.classList.contains("sub-menu-open")) if (!targetElement.closest(".body-header__sub-menu") && !targetElement.closest(".menu-body-header__link")) {
+            if (!targetElement.closest(".menu__btn-back")) if (document.documentElement.classList.contains("sub-menu-open")) if (!targetElement.closest(".body-header__sub-menu") && !targetElement.closest(".menu-body-header__link")) {
                 const activeLinkMenu = document.querySelector("._sub-menu-active");
                 const activeBlockSubMenu = document.querySelector("._sub-menu-open");
                 closeSubMenu(activeLinkMenu, activeBlockSubMenu);
