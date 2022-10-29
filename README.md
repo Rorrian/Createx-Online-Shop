@@ -26,3 +26,6 @@
 * Окно отзыва о товаре(на странице товара)
 * Окно корзины
 * Окно авторизации/регистрации  
+
+Deployment:  
+https://rorrian.github.io/Createx-Online-Shop/
