@@ -5866,6 +5866,11 @@ body {
   border-radius: 0.25rem;
   cursor: pointer;
 }
+@media (max-width: 21.5625em) {
+  .checkbox-news-category__label {
+    padding: 4vw 3vw;
+  }
+}
 /*//.
 &{
 }*/
