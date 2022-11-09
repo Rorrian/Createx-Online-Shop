@@ -8659,6 +8659,23 @@
                 setTimeout((function() {
                     cart.classList.remove("_scale");
                 }), 200);
+                btnAddProductToCart.classList.add("_active_preloader");
+                let preloader = document.createElement("div");
+                preloader.className = "preloader";
+                preloader.innerHTML = "";
+                btnAddProductToCart.prepend(preloader);
+                setTimeout((() => {
+                    preloader.remove();
+                    let mark = document.createElement("div");
+                    mark.className = "mark";
+                    mark.innerHTML = "";
+                    btnAddProductToCart.prepend(mark);
+                    mark.classList.add("_show");
+                    setTimeout((() => {
+                        mark.remove();
+                        btnAddProductToCart.classList.remove("_active_preloader");
+                    }), 600);
+                }), 900);
                 const cartCounter = document.querySelector("button.actions__cart").children[1];
                 let productQuantity = productObject.quantity;
                 cartCounter.innerHTML = Number(cartCounter.innerHTML) + Number(productQuantity);
